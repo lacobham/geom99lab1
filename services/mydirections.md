@@ -9,7 +9,7 @@ Be creative and use multiple parameters from the API documentation to earn a top
 ## Directions URL
 
 ```
-https://YourDirectionsApiURLGoesHere
+https://maps.googleapis.com/maps/api/directions/json?origin=Port+Credit&destination=Lindsay&avoid=tolls&departure_time=1706281200&waypoints=Toronto%2CON%7CAjax%2CON%7CBowmanville%2CON&traffic_model=pessimistic&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 ```
 
 Copy/paste the JSON results and save them into the empty file ```mydirections.json``` in this repository
