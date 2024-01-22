@@ -51,8 +51,8 @@ async function initMap() {
   const beachFlagMarkerView = new AdvancedMarkerElement({
     map,
     position: {
-      lat: 45.9701,
-      lng: -81.5080
+      lat: 45.97141145110097,
+      lng: -81.5155620128018
     },
     content: beachFlagImg,
     title: "A marker using a custom PNG Image",
