@@ -22,7 +22,7 @@ async function initMap() {
       lat: 45.9701,
       lng: -81.5080
     },
-    zoom: 13,
+    zoom: 15,
     mapId: "4504f8b37365c3d0",
   });
   const parser = new DOMParser();
@@ -36,8 +36,8 @@ async function initMap() {
   const pinSvgMarkerView = new AdvancedMarkerElement({
     map,
     position: {
-      lat: 45.9701,
-      lng: -81.5080
+      lat: 45.9706,
+      lng: -81.5033
     },
     content: pinSvg,
     title: "A marker using a custom SVG image.",
@@ -114,8 +114,8 @@ async function initMap() {
   const faMarker = new AdvancedMarkerElement({
     map,
     position: {
-      lat: 45.9701,
-      lng: -81.5080
+      lat: 45.9687,
+      lng: -81.4889
     },
     content: faPin.element,
     title: "A marker using a FontAwesome icon for the glyph.",
