@@ -27,6 +27,14 @@ Read the Rubric to find out about what options exist to earn more marks. Here is
 
   which the JSON will have a CID that can be directly used as a URL like https://maps.google.com/?cid=4569584641105657000
 
+Laura's URLs:
+https://www.google.com/maps/place/?q=place_id:ChIJuacP9XNGK4gRhI1MhToZA7I
+https://www.google.com/maps/place/?q=place_id:ChIJpTvG15DL1IkRd8S0KlBVNTI
+https://www.google.com/maps/place/?q=place_id:ChIJ0RWtQbTn1IkRzr6A0wHhd_s
+https://www.google.com/maps/place/?q=place_id:ChIJpZLk7sYA1YkRY_irwr-RmVQ
+https://www.google.com/maps/place/?q=place_id:ChIJmy7QzkN51YkRCN4Ff03qIbQ
+
+https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJuacP9XNGK4gRhI1MhToZA7I&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE
 
 ____
 ## Rubric
