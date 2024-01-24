@@ -61,7 +61,7 @@ async function initMap() {
   const glyphImg = document.createElement("img");
 
   glyphImg.src =
-    "killarney-hero1.jpg";
+    "https://www.parkbus.ca/img/killarney-hero1.jpg";
 
   const glyphSvgPinElement = new PinElement({
     glyph: glyphImg,
