@@ -58,10 +58,8 @@ async function initMap() {
     title: "A marker using a custom PNG Image",
   });
   // A marker with a custom SVG glyph.
-  const glyphImg = document.createElement("img");
-
-  glyphImg.src =
-   "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+  const glyphImg = document.createElement('img');
+    glyphImg.src = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/google_logo_g.svg';
 
   const glyphSvgPinElement = new PinElement({
     glyph: glyphImg,
