@@ -24,9 +24,25 @@ div.scroll-container {
   white-space: nowrap;
   padding: 25px;
 }
-
 div.scroll-container img {
   padding: 10px;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
   "permalink": "samples/{{ page.fileSlug }}/{{mode}}/{% if mode == 'jsfiddle' %}demo{% else %}index{% endif %}.{{ page.outputFileExtension }}"
 }
@@ -44,6 +60,34 @@ div.scroll-container img {
   <script src="story.json">
   </script>
 
+<div class="gallery">
+  <a target="_blank" href="IMG_5091.jpg">
+    <img src="IMG_5091.jpg" alt="Cinque Terre" width="227" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="IMG_5091.jpg">
+    <img src="IMG_5091.jpg" alt="Forest" width="227" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="IMG_5091.jpg">
+    <img src="IMG_5091.jpg" alt="Northern Lights" width="227" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="IMG_5091.jpg">
+    <img src="IMG_5091.jpg" alt="Mountains" width="227" height="200">
+  </a>
+  <div class="desc">Add a description of the image here</div>
+</div>
+  
 <div class="scroll-container">
   <img src="IMG_5091.jpg" alt="Big Dipper" width="267" height="200">
   <img src="IMG_5167.jpg" alt="Killarney Lighthouse" width="227" height="200">
