@@ -36,8 +36,8 @@ async function initMap() {
   const pinSvgMarkerView = new AdvancedMarkerElement({
     map,
     position: {
-      lat: 45.97054144763459,
-      lng: -81.5032903177911
+      lat: 45.97053711163098,
+      lng: -81.50328990980692
     },
     content: pinSvg,
     title: "A marker using a custom SVG image.",
