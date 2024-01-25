@@ -32,6 +32,7 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 180px;
+  display: block;
 }
 div.gallery:hover {
   border: 1px solid #777;
@@ -43,9 +44,6 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-}
-#div {
-display: block;
 }
   "permalink": "samples/{{ page.fileSlug }}/{{mode}}/{% if mode == 'jsfiddle' %}demo{% else %}index{% endif %}.{{ page.outputFileExtension }}"
 }
@@ -62,7 +60,7 @@ display: block;
   </body>
   <script src="story.json">
   </script>
-<div id="div">
+
 <div class="gallery">
   <a target="_blank" href="IMG_5091.jpg">
     <img src="IMG_5091.jpg" alt="Cinque Terre" width="227" height="200">
@@ -90,7 +88,7 @@ display: block;
   </a>
   <div class="desc">Add a description of the image here</div>
 </div>
-</div>
+
 <div class="scroll-container">
   <img src="IMG_5091.jpg" alt="Big Dipper" width="267" height="200">
   <img src="IMG_5167.jpg" alt="Killarney Lighthouse" width="227" height="200">
