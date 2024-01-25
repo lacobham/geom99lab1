@@ -18,6 +18,16 @@ h1 {
  font-size: 20pt;
  text-align: center;
      }
+      div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
   "permalink": "samples/{{ page.fileSlug }}/{{mode}}/{% if mode == 'jsfiddle' %}demo{% else %}index{% endif %}.{{ page.outputFileExtension }}"
 }
     </style>
@@ -33,4 +43,11 @@ h1 {
   </body>
   <script src="story.json">
   </script>
+
+<div class="scroll-container">
+  <img src="img_mountains.jpg" alt="Cinque Terre" width="600" height="400">
+  <img src="img_mountains.jpg" alt="Forest" width="600" height="400">
+  <img src="img_mountains.jpg" alt="Northern Lights" width="600" height="400">
+  <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+</div>
 </html>
