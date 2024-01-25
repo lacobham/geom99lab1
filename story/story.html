@@ -1,28 +1,26 @@
-<!doctype html>
-<!--
- @license
- Copyright 2019 Google LLC. All Rights Reserved.
- SPDX-License-Identifier: Apache-2.0
--->
+<!DOCTYPE HTML>
 <html>
   <head>
     <style>
-     /**
- * @license
- * Copyright 2019 Google LLC. All Rights Reserved.
- * SPDX-License-Identifier: Apache-2.0
- */
-/* 
- * Always set the map height explicitly to define the size of the div element
- * that contains the map. 
- */
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+div.gallery:hover {
+  border: 1px solid #777;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
 #map {
   height: 100%;
 }
-/* 
- * Optional: Makes the sample page fill the window. 
- */
-html,
 body {
  background-color: LightGray;
  width: 80%;
@@ -38,8 +36,8 @@ h1 {
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
     <!-- jsFiddle will insert css and js -->
-  </head>
-  <body>
+</head>
+<body>
    <h1>Killarney Mountain Lodge</h1>
     <div id="map"></div>
     <!-- prettier-ignore -->
