@@ -28,7 +28,9 @@ async function initMap() {
   const parser = new DOMParser();
   // A marker with a custom inline SVG.
   const pinSvgString =
-    '<svg width="100" height="100"><circle cx="50" cy="50" r="40" fill="red"></svg>';
+    '<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" fill="red" />
+  </svg>';
 const pinSvg = parser.parseFromString(
     pinSvgString,
     "image/svg+xml",
