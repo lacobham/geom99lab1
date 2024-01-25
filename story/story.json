@@ -31,6 +31,7 @@ async function initMap() {
 
   dinnerplateImg.src =
     "dinner.jpg";
+
   const dinnerplateMarkerView = new AdvancedMarkerElement({
     map,
     position: {
@@ -43,6 +44,7 @@ async function initMap() {
   // A marker with a custom SVG glyph.
   const glyphImg = document.createElement('img');
     glyphImg.src = 'hotel.svg';
+
   const glyphSvgPinElement = new PinElement({
     glyph: glyphImg,
   });
@@ -59,6 +61,7 @@ async function initMap() {
   const place = new Place({
     id: "ChIJBWXVQVZzLk0RDaSVKMHkanE",
   });
+
   // Call fetchFields, passing the desired data fields.
   await place.fetchFields({
     fields: [
@@ -68,6 +71,7 @@ async function initMap() {
       "iconBackgroundColor",
     ],
   });
+
   const pinElement = new PinElement({
     background: place.iconBackgroundColor,
     glyph: new URL(String(place.svgIconMaskURI)),
@@ -80,7 +84,9 @@ async function initMap() {
   });
   // A marker using a Font Awesome icon for the glyph.
   const icon = document.createElement("div");
+
   icon.innerHTML = '<i class="fa fa-mountain fa-lg"</i>';
+
   const faPin = new PinElement({
     glyph: icon,
     glyphColor: "#c1d8f0",
@@ -97,3 +103,4 @@ async function initMap() {
     title: "A marker using a FontAwesome icon for the glyph.",
   });
 }
+initMap();
