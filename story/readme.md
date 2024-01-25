@@ -1,8 +1,3 @@
-# Story using Google Dynamic Maps
-
-Use this folder to house your Google Dynamic Maps story. See the requirements in the D2L checklist. 
-
-<!doctype html>
 <!--
  @license
  Copyright 2019 Google LLC. All Rights Reserved.
