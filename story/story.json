@@ -46,7 +46,7 @@ async function initMap() {
   const beachFlagImg = document.createElement("img");
 
   beachFlagImg.src =
-    "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+    "dinner.jpg";
 
   const beachFlagMarkerView = new AdvancedMarkerElement({
     map,
