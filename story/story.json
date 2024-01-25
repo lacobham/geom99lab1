@@ -103,8 +103,6 @@ async function initMap() {
     title: "A marker using a FontAwesome icon for the glyph.",
   });
 }
-
-initMap();
 {
   "title": "Custom Legend",
   "callback": "initMap",
@@ -119,3 +117,5 @@ initMap();
   },
   "permalink": "samples/{{ page.fileSlug }}/{{mode}}/{% if mode == 'jsfiddle' %}demo{% else %}index{% endif %}.{{ page.outputFileExtension }}"
 }
+initMap();
+
