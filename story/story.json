@@ -59,7 +59,7 @@ async function initMap() {
   });
   // A marker with a custom SVG glyph.
   const glyphImg = document.createElement('img');
-    glyphImg.src = 'https://developers.google.com/maps/documentation/javascript/examples/full/images/google_logo_g.svg';
+    glyphImg.src = 'hotel.svg';
 
   const glyphSvgPinElement = new PinElement({
     glyph: glyphImg,
@@ -67,8 +67,8 @@ async function initMap() {
   const glyphSvgMarkerView = new AdvancedMarkerElement({
     map,
     position: {
-      lat: 45.97006922423128,
-      lng: -81.50801964104515
+      lat: 45.970074027456945,
+      lng: -81.50804157729885
     },
     content: glyphSvgPinElement.element,
     title: "A marker using a custom SVG for the glyph.",
