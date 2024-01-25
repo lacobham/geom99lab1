@@ -51,8 +51,8 @@ async function initMap() {
   const dinnerplateMarkerView = new AdvancedMarkerElement({
     map,
     position: {
-      lat: 45.971274571170895,
-      lng: -81.51550059755122
+      lat: 45.971284876286475,
+      lng: -81.51550012822338
     },
     content: dinnerplateImg,
     title: "A marker using a custom PNG Image",
