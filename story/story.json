@@ -43,18 +43,18 @@ async function initMap() {
     title: "A marker using a custom SVG image.",
   });
   // A marker with a with a URL pointing to a PNG.
-  const beachFlagImg = document.createElement("img");
+  const dinnerplateImg = document.createElement("img");
 
-  beachFlagImg.src =
+  dinnerplateImg.src =
     "dinner.jpg";
 
-  const beachFlagMarkerView = new AdvancedMarkerElement({
+  const dinnerplateMarkerView = new AdvancedMarkerElement({
     map,
     position: {
-      lat: 45.97141145110097,
-      lng: -81.5155620128018
+      lat: 45.971274571170895,
+      lng: -81.51550059755122
     },
-    content: beachFlagImg,
+    content: dinnerplateImg,
     title: "A marker using a custom PNG Image",
   });
   // A marker with a custom SVG glyph.
