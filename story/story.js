@@ -31,13 +31,14 @@ async function initMap() {
   // A marker with a custom SVG glyph.
   const glyphImg = document.createElement("img");
 
-  glyphImg.src = 'hotel.svg';
+  glyphImg.src = "hotel.svg";
 
   const glyphSvgPinElement = new PinElement({
     glyph: glyphImg,
   });
   const glyphSvgMarkerView = new AdvancedMarkerElement({
-   position: {
+    map,
+    position: {
       lat: 45.970074027456945,
       lng: -81.50804157729885
     },
