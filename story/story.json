@@ -46,7 +46,7 @@ async function initMap() {
   const dinnerplateImg = document.createElement("img");
 
   dinnerplateImg.src =
-    "dinner2.jpg";
+    "dinner.jpg";
 
   const dinnerplateMarkerView = new AdvancedMarkerElement({
     map,
