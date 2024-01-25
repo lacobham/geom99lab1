@@ -78,7 +78,7 @@ async function initMap() {
     glyph: icon,
     glyphColor: "#c1d8f0",
     background: "#4663ac",
-    borderColor: "##4a5778",
+    borderColor: "#4a5778",
   });
   const faMarker = new AdvancedMarkerElement({
     map,
@@ -90,5 +90,4 @@ async function initMap() {
     title: "A marker using a FontAwesome icon for the glyph.",
   });
 }
-
 initMap();
