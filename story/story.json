@@ -28,10 +28,10 @@ async function initMap() {
   const parser = new DOMParser();
   // A marker with a custom inline SVG.
   const pinSvgString =
-    '<svg xmlns="http://www.w3.org/2000/svg"  width="30px" height="30px" viewBox="60 70 70 70">
+    <svg xmlns="http://www.w3.org/2000/svg"  width="30px" height="30px" viewBox="60 70 70 70">
     <ellipse cx="91.47" cy="103.854" fill="#fff" stroke="#c90807" stroke-width="2.765" rx="26.458" ry="26.08" />
     <path fill="#c90807" d="M88.461 85.05h6.147v26.707h-6.147zm0 30.014h6.147v5.622h-6.147z" />
-</svg>';
+</svg>;
 const pinSvg = parser.parseFromString(
     pinSvgString,
     "image/svg+xml",
