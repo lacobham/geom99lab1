@@ -43,7 +43,7 @@ function buildContent(property) {
         <span class="fa-sr-only">${property.type}</span>
     </div>
     <div class="details">
-        <div class="price">${property.price}</div>
+        <div class="visit">${property.visit}</div>
         <div class="address">${property.address}</div>
         <div class="features">
         <div>
@@ -71,7 +71,7 @@ const properties = [
   { 
     address: "Killarney Mountain Lodge",
     description: "Hotel on Killarney Channel.",
-    price: "$ 2,500,000",
+    visit: "Must-visit spot",
     type: "home",
     bed: 3,
     bath: 2,
@@ -84,7 +84,7 @@ const properties = [
   {
     address: "Tar Vat Trail",
     description: "Hiking Trail starting at the Big Dipper",
-    price: "$ 3,889,000",
+    visit: "Must-visit spot",
     type: "tree",
     bed: 5,
     bath: 4.5,
@@ -97,7 +97,7 @@ const properties = [
     { 
     address: "Killarney Lighthouse",
     description: "End of the Lighthouse Trail",
-    price: "$ 2,500,000",
+    visit: "Must-visit spot",
     type: "mountain",
     bed: 3,
     bath: 2,
@@ -107,6 +107,20 @@ const properties = [
       lng: -81.48900846012069,
     },
   },
+    { 
+    address: "Sportsman's Inn Restaurant",
+    description: "End of the Lighthouse Trail",
+    visit: "Can-skip spot",
+    type: "utensils",
+    bed: 3,
+    bath: 2,
+    size: 450,
+    position: {
+      lat: 45.97127504950274,
+      lng: -81.51550075043795,
+    },
+  },
+  
 ];
 
 initMap();
