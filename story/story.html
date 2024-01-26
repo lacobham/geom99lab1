@@ -10,7 +10,7 @@
 html, body {
  height: 80%;
  width: 80%;
- background-color: LightGray;
+ background-color: #e1f1fd;
  margin: auto;
 }
 h1 {
@@ -28,7 +28,7 @@ text-align: center;
 }
 /*Scrolling image gallery*/
 div.scroll-container {
-  background-color: LightGray;
+  background-color: #e1f1fd;
   overflow: auto;
   white-space: nowrap;
   padding: 25px;
@@ -36,6 +36,18 @@ div.scroll-container {
 div.scroll-container img {
   padding: 10px;
 }
+/* Editing scrollbar properties learnt from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+/* Styling of scrollbar size */
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Colour of bar behind scrolling part */
+::-webkit-scrollbar-track {
+  background: #bccad6; 
+}
+ /* Colour of scrolling part of bar */
+::-webkit-scrollbar-thumb {
+  background: #667292; 
 /*Legend image gallery*/
 div.gallery {
   margin: 15px;
@@ -204,9 +216,10 @@ margin-left: 80px;
    
 </head>
 <body>
-  <h1>Killarney Mountain Lodge</h1>
+  <h1Laura's Killarney Trip</h1>
   <div id="map"></div>
   <h2>Legend</h2>
+  <p>Click the points of interest for more information!</p>
 <!--Legend section -->
   <div id="legend">
   <div class="gallery">
@@ -236,6 +249,7 @@ margin-left: 80px;
 </div>
 <p>I visited Killarney Mountain Lodge with my family in August of 2022. It took around 5 hours to get there and we stayed for a week. On the trip we hiked the Tar Vat trail to the Killarney Lighthouse, went kayaking, canoeing, and swimming in the Killarney Channel, and often ate at the Sportsman's Inn.</p>
 <!--Scrolling gallery section -->
+<p>Check out some photos from the trip!</p>
   <div class="scroll-container">
   <img src="IMG_5091.jpg" alt="Big Dipper" width="267" height="200">
   <img src="IMG_5167.jpg" alt="Killarney Lighthouse" width="227" height="200">
