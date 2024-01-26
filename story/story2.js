@@ -68,6 +68,19 @@ function buildContent(property) {
 }
 
 const properties = [
+  { 
+    address: "Killarney Mountain Lodge",
+    description: "2 storey store with large storage room",
+    price: "$ 2,500,000",
+    type: "store-alt",
+    bed: 3,
+    bath: 2,
+    size: 450,
+    position: {
+      lat: 45.970074027456945,
+      lng: -81.50804157729885,
+    },
+  },
   {
     address: "215 Emily St, MountainView, CA",
     description: "Single family house with modern design",
