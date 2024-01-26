@@ -70,7 +70,7 @@ function buildContent(property) {
 const properties = [
   { 
     address: "Killarney Mountain Lodge",
-    description: "2 storey store with large storage room",
+    description: "Hotel on Killarney Channel.",
     price: "$ 2,500,000",
     type: "home",
     bed: 3,
@@ -82,16 +82,29 @@ const properties = [
     },
   },
   {
-    address: "215 Emily St, MountainView, CA",
-    description: "Single family house with modern design",
+    address: "Tar Vat Trail",
+    description: "Hiking Trail starting at the Big Dipper",
     price: "$ 3,889,000",
     type: "tree",
     bed: 5,
     bath: 4.5,
     size: 300,
     position: {
-      lat: 45.971284876286475,
-      lng: -81.51550012822338,
+      lat: 45.97022665335025,
+      lng: -81.49045787753137
+    },
+  },
+    { 
+    address: "Killarney Lighthouse",
+    description: "End of the Lighthouse Trail",
+    price: "$ 2,500,000",
+    type: "mountain",
+    bed: 3,
+    bath: 2,
+    size: 450,
+    position: {
+      lat: 45.96857423595253,
+      lng: -81.48900846012069,
     },
   },
 ];
