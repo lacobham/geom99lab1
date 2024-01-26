@@ -36,7 +36,7 @@ div.scroll-container {
   background-color: LightGray;
   overflow: auto;
   white-space: nowrap;
-  padding: 25px;
+  padding: 15px;
 }
 div.scroll-container img {
   padding: 10px;
@@ -57,6 +57,16 @@ div.gallery img {
 div.desc {
   padding: 5px;
   text-align: center;
+}
+/* Editing scrollbar properties learnt from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #bccad6; 
+}
+::-webkit-scrollbar-thumb {
+  background: #667292; 
 }
 #legend {
 display: inline-block;
