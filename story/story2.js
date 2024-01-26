@@ -47,21 +47,11 @@ function buildContent(property) {
         <div class="visit">${property.visit}</div>
         <div class="features">
         <div>
-            <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
-            <span class="fa-sr-only">bedroom</span>
-            <span>${property.bed}</span>
+            <i aria-hidden="true" class="fa fa-question fa-lg question" title="desc"></i>
+            <span class="fa-sr-only">desc</span>
+            <span>${property.question}</span>
         </div>
-        <div>
-            <i aria-hidden="true" class="fa fa-bath fa-lg bath" title="bathroom"></i>
-            <span class="fa-sr-only">bathroom</span>
-            <span>${property.bath}</span>
-        </div>
-        <div>
-            <i aria-hidden="true" class="fa fa-ruler fa-lg size" title="size"></i>
-            <span class="fa-sr-only">size</span>
-            <span>${property.size} ft<sup>2</sup></span>
-        </div>
-        </div>
+      </div>
     </div>
     `;
   return content;
@@ -69,53 +59,45 @@ function buildContent(property) {
 
 const properties = [
   { 
-    address: "Must-visit spot",
+    visit: "Must-visit spot",
     description: "Hotel on Killarney Channel.",
-    visit: "Killarney Mountain Lodge",
+    address: "Killarney Mountain Lodge",
     type: "home",
-    bed: 3,
-    bath: 2,
-    size: 450,
+    question: "Lodge with a great view.",
     position: {
       lat: 45.970074027456945,
       lng: -81.50804157729885,
     },
   },
   {
-    address: "Must-visit spot",
+    visit: "Must-visit spot",
     description: "Hiking Trail starting at the Big Dipper",
-    visit: "Tar Vat Trail",
+    address: "Tar Vat Trail",
     type: "tree",
-    bed: 5,
-    bath: 4.5,
-    size: 300,
+    question: "Approx 6km hike up to the lighthouse.",
     position: {
       lat: 45.97022665335025,
       lng: -81.49045787753137
     },
   },
     { 
-    address: "Must-visit spot",
+    visit: "Must-visit spot",
     description: "End of the Lighthouse Trail",
-    visit: "Killarney Lighthouse",
+    address: "Killarney Lighthouse",
     type: "mountain",
-    bed: 3,
-    bath: 2,
-    size: 450,
-    position: {
+    question: "Lighthouse with a view of Georgian Bay.",
+        position: {
       lat: 45.96857423595253,
       lng: -81.48900846012069,
     },
   },
     { 
-    address: "Can-skip spot",
+    visit: "Can-skip spot",
     description: "End of the Lighthouse Trail",
-    visit: "Sportsman's Inn Restaurant",
+    address: "Sportsman's Inn Restaurant",
     type: "utensils",
-    bed: 3,
-    bath: 2,
-    size: 450,
-    position: {
+    question: "Classic bar and grill.",
+        position: {
       lat: 45.97127504950274,
       lng: -81.51550075043795,
     },
