@@ -81,7 +81,6 @@ const properties = [
       lng: -122.28528451834352,
     },
   },
-  {
 ];
 
 initMap();
