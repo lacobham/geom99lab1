@@ -26,6 +26,7 @@ p {
 font-size: 13pt;
 text-align: center;
 }
+/*Scrolling image gallery*/
 div.scroll-container {
   background-color: LightGray;
   overflow: auto;
@@ -35,6 +36,7 @@ div.scroll-container {
 div.scroll-container img {
   padding: 10px;
 }
+/*Legend image gallery*/
 div.gallery {
   margin: 15px;
   float: left;
@@ -55,15 +57,15 @@ div.desc {
 display: inline-block;
 margin-left: 80px;
 }
+/* Advanced Markers template from: https://developers.google.com/maps/documentation/javascript/examples/advanced-markers-html
+   Point icons from: https://fontawesome.com/ */
       :root {
   --tree-color: #4F7942;
   --house-color: #0288D1;
   --mountain-color: #FF0000;
   --utensils-color: #A9A9A9;
 }
-/*
- * Property styles in unhighlighted state.
- */
+/* POI styles when not clicked on */
 .property {
   align-items: center;
   background-color: #FFFFFF;
@@ -80,7 +82,7 @@ margin-left: 80px;
   transition: all 0.3s ease-out;
   width: 30px;
 }
-
+/* POI styles clicked on */
 .property::after {
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
@@ -95,39 +97,33 @@ margin-left: 80px;
   width: 0;
   z-index: 1;
 }
-
 .property .icon {
   align-items: center;
   display: flex;
   justify-content: center;
   color: #FFFFFF;
 }
-
 .property .icon svg {
   height: 20px;
   width: auto;
 }
-
 .property .details {
   display: none;
   flex-direction: column;
   flex: 1;
 }
-
 .property .address {
   color: #9E9E9E;
   font-size: 10px;
   margin-bottom: 10px;
   margin-top: 5px;
 }
-
 .property .features {
   align-items: flex-end;
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-
 .property .features > div {
   align-items: center;
   background: #F5F5F5;
@@ -138,10 +134,6 @@ margin-left: 80px;
   gap: 5px;
   padding: 5px;
 }
-
-/*
- * Property styles in highlighted state.
- */
 .property.highlight {
   background-color: #FFFFFF;
   border-radius: 8px;
@@ -150,93 +142,58 @@ margin-left: 80px;
   padding: 8px 15px;
   width: auto;
 }
-
 .property.highlight::after {
   border-top: 9px solid #FFFFFF;
 }
-
 .property.highlight .details {
   display: flex;
 }
-
 .property.highlight .icon svg {
   width: 50px;
   height: 50px;
 }
-
-.property .bed {
-  color: #FFA000;
-}
-
-.property .bath {
-  color: #03A9F4;
-}
-
-.property .size {
-  color: #388E3C;
-}
-
-/*
- * House icon colors.
- */
+/* House icon colors */
 .property.highlight:has(.fa-house) .icon {
   color: var(--house-color);
 }
-
 .property:not(.highlight):has(.fa-house) {
   background-color: var(--house-color);
 }
-
 .property:not(.highlight):has(.fa-house)::after {
   border-top: 9px solid var(--house-color);
 }
-
-/*
- * Tree icon colors.
- */
+/* Tree icon colours */
 .property.highlight:has(.fa-tree) .icon {
   color: var(--tree-color);
 }
-
 .property:not(.highlight):has(.fa-tree) {
   background-color: var(--tree-color);
 }
-
 .property:not(.highlight):has(.fa-tree)::after {
   border-top: 9px solid var(--tree-color);
 }
-
-/*
- * utensils icon colors.
- */
+/* Utensils icon colours */
 .property.highlight:has(.fa-utensils) .icon {
   color: var(--utensils-color);
 }
-
 .property:not(.highlight):has(.fa-utensils) {
   background-color: var(--utensils-color);
 }
-
 .property:not(.highlight):has(.fa-utensils)::after {
   border-top: 9px solid var(--utensils-color);
 }
-
-/*
- * mountain icon colors.
- */
+/* Mountain icon colours */
 .property.highlight:has(.fa-mountain) .icon {
   color: var(--mountain-color);
 }
-
 .property:not(.highlight):has(.fa-mountain) {
   background-color: var(--mountain-color);
 }
-
 .property:not(.highlight):has(.fa-mountain)::after {
   border-top: 9px solid var(--mountain-color);
 }
 </style>
-<!--Advanced Markers template from: https://developers.google.com/maps/documentation/javascript/examples/advanced-markers-graphics#maps_advanced_markers_graphics-html 
+<!--Advanced Markers template from: https://developers.google.com/maps/documentation/javascript/examples/advanced-markers-html 
      Image galleries adapted from: https://www.w3schools.com/css/css_image_gallery.asp AND https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp-->
 
     <title>Advanced Markers Using Graphics</title>
@@ -250,6 +207,7 @@ margin-left: 80px;
   <h1>Killarney Mountain Lodge</h1>
   <div id="map"></div>
   <h2>Legend</h2>
+<!--Legend section -->
   <div id="legend">
   <div class="gallery">
   <a target="_blank" href="utensils.png">
@@ -276,8 +234,9 @@ margin-left: 80px;
   <div class="desc">Hiking Trail End</div>
 </div>
 </div>
-<p>I visited Killarney Mountain Lodge with my family in August of 2023. It took around 5 hours to get there and we stayed for a week. On the trip we hiked the Tar Vat trail to the Killarney Lighthouse, went kayaking, canoeing, and swimming in the Killarney Channel, and often ate at the Sportsman's Inn.</p>
-<div class="scroll-container">
+<p>I visited Killarney Mountain Lodge with my family in August of 2022. It took around 5 hours to get there and we stayed for a week. On the trip we hiked the Tar Vat trail to the Killarney Lighthouse, went kayaking, canoeing, and swimming in the Killarney Channel, and often ate at the Sportsman's Inn.</p>
+<!--Scrolling gallery section -->
+  <div class="scroll-container">
   <img src="IMG_5091.jpg" alt="Big Dipper" width="267" height="200">
   <img src="IMG_5167.jpg" alt="Killarney Lighthouse" width="227" height="200">
   <img src="IMG_5172.jpg" alt="Sarah and Laura in Killarney" width="267" height="200">
