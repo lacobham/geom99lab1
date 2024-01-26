@@ -86,5 +86,7 @@ async function initMap() {
     position: { lat: 37.412, lng: -122.095829650878 },
     content: faPin.element,
     title: "A marker using a FontAwesome icon for the glyph.",
-  });
+    });
+}
+
 initMap();
