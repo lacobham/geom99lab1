@@ -52,7 +52,7 @@ display: inline-block;
       :root {
   --tree-color: #FF9800;
   --house-color: #0288D1;
-  --shop-color: #7B1FA2;
+  --mountain-color: #7B1FA2;
   --warehouse-color: #558B2F;
 }
 /*
@@ -216,18 +216,18 @@ display: inline-block;
 }
 
 /*
- * Shop icon colors.
+ * mountain icon colors.
  */
-.property.highlight:has(.fa-shop) .icon {
-  color: var(--shop-color);
+.property.highlight:has(.fa-mountain) .icon {
+  color: var(--mountain-color);
 }
 
-.property:not(.highlight):has(.fa-shop) {
-  background-color: var(--shop-color);
+.property:not(.highlight):has(.fa-mountain) {
+  background-color: var(--mountain-color);
 }
 
-.property:not(.highlight):has(.fa-shop)::after {
-  border-top: 9px solid var(--shop-color);
+.property:not(.highlight):has(.fa-mountain)::after {
+  border-top: 9px solid var(--mountain-color);
 }
 </style>
 <!--Advanced Markers template from: https://developers.google.com/maps/documentation/javascript/examples/advanced-markers-graphics#maps_advanced_markers_graphics-html 
