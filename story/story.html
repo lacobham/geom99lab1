@@ -30,13 +30,15 @@ p {
   text-align: center;
   max-width: 777px;
   margin-left: 100px;
+  margin-bottom: 40px;
 }
 /*Scrolling image gallery*/
 div.scroll-container {
   background-color: LightGray;
   overflow: auto;
   white-space: nowrap;
-  padding: 15px;
+  max-width:777px;
+  margin-left: 50px;
 }
 div.scroll-container img {
   padding: 10px;
@@ -60,13 +62,10 @@ div.desc {
 }
 /* Editing scrollbar properties learnt from: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
 ::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background: white; 
+  width: 20px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #A9A9A9; 
+  background: white; 
 }
 #legend {
 display: inline-block;
