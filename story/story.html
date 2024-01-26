@@ -53,7 +53,7 @@ display: inline-block;
   --tree-color: #FF9800;
   --house-color: #0288D1;
   --mountain-color: #7B1FA2;
-  --warehouse-color: #558B2F;
+  --utensils-color: #558B2F;
 }
 /*
  * Property styles in unhighlighted state.
@@ -201,18 +201,18 @@ display: inline-block;
 }
 
 /*
- * Warehouse icon colors.
+ * utensils icon colors.
  */
-.property.highlight:has(.fa-warehouse) .icon {
-  color: var(--warehouse-color);
+.property.highlight:has(.fa-utensils) .icon {
+  color: var(--utensils-color);
 }
 
-.property:not(.highlight):has(.fa-warehouse) {
-  background-color: var(--warehouse-color);
+.property:not(.highlight):has(.fa-utensils) {
+  background-color: var(--utensils-color);
 }
 
-.property:not(.highlight):has(.fa-warehouse)::after {
-  border-top: 9px solid var(--warehouse-color);
+.property:not(.highlight):has(.fa-utensils)::after {
+  border-top: 9px solid var(--utensils-color);
 }
 
 /*
