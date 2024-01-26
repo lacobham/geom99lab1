@@ -47,9 +47,9 @@ function buildContent(property) {
         <div class="address">${property.address}</div>
         <div class="features">
         <div>
-            <i aria-hidden="true" class="fa fa-tree fa-lg tree" title="HikingTrail"></i>
-            <span class="fa-sr-only">HikingTrail</span>
-            <span>${property.HikingTrail}</span>
+            <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
+            <span class="fa-sr-only">bedroom</span>
+            <span>${property.bed}</span>
         </div>
         <div>
             <i aria-hidden="true" class="fa fa-bath fa-lg bath" title="bathroom"></i>
