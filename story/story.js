@@ -31,7 +31,7 @@ async function initMap() {
   // A marker with a custom SVG glyph.
   const glyphImg = document.createElement("img");
 
-  glyphImg.src = "hotel.svg";
+  glyphImg.src = "hotel3.svg";
 
   const glyphSvgPinElement = new PinElement({
     glyph: glyphImg,
