@@ -72,7 +72,7 @@ async function initMap() {
   // A marker using a Font Awesome icon for the glyph.
   const icon = document.createElement("div");
 
-  icon.innerHTML = '<i class='bx bxs-tree-alt'></i>';
+  icon.innerHTML = '<box-icon name='tree-alt'></box-icon>';
 
   const faPin = new PinElement({
     glyph: icon,
