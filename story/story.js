@@ -70,23 +70,24 @@ async function initMap() {
     content: pinElement.element,
     title: place.displayName,
   });
-  // A marker using a Font Awesome icon for the glyph.
+ // A marker using a Font Awesome icon for the glyph.
   const icon = document.createElement("div");
-  icon.innerHTML = '<i class="fa fa-mountain fa-lg"</i>';
+
+  icon.innerHTML = '<i class="fa fa-pizza-slice fa-lg"></i>';
+
   const faPin = new PinElement({
     glyph: icon,
-    glyphColor: "#c1d8f0",
-    background: "#4663ac",
-    borderColor: "##4a5778",
+    glyphColor: "#ff8300",
+    background: "#FFD514",
+    borderColor: "#ff8300",
   });
   const faMarker = new AdvancedMarkerElement({
     map,
-    position: {
-      lat: 45.96857337410628,
-      lng: -81.48900853545217
-    },
+    position: { lat: 45.970074027456945,
+      lng: -81.50804157729885 },
     content: faPin.element,
     title: "A marker using a FontAwesome icon for the glyph.",
   });
 }
+
 initMap();
