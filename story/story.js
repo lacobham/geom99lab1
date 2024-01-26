@@ -61,5 +61,5 @@ async function initMap() {
     content: pinElement.element,
     title: place.displayName,
   });
-
+}
 initMap();
