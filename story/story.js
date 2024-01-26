@@ -11,31 +11,6 @@ async function initMap() {
     mapId: "4504f8b37365c3d0",
   });
   const parser = new DOMParser();
-    // A marker with a with a URL pointing to a PNG.
-  const dinnerplateImg = document.createElement("img");
-
-  dinnerplateImg.src =
-    "dinner.jpg";
-  const dinnerplateMarkerView = new AdvancedMarkerElement({
-    map,
-    position: {lat: 45.971284876286475, lng: -81.51550012822338},
-    content: dinnerplateImg,
-    title: "A marker using a custom PNG Image",
-  });
-  // A marker with a custom SVG glyph.
-  const glyphImg = document.createElement("img");
-
-  glyphImg.src = "hotel.svg";
-
-  const glyphSvgPinElement = new PinElement({
-    glyph: glyphImg,
-  });
-  const glyphSvgMarkerView = new AdvancedMarkerElement({
-    map,
-    position: {lat: 45.970074027456945, lng: -81.50804157729885},
-    content: glyphSvgPinElement.element,
-    title: "A marker using a custom SVG for the glyph.",
-  });
   // A marker customized using a place icon and color, name, and geometry.
   const place = new Place({
     id: "ChIJBWXVQVZzLk0RDaSVKMHkanE",
@@ -60,6 +35,31 @@ async function initMap() {
     position: place.location,
     content: pinElement.element,
     title: place.displayName,
+  });
+  // A marker with a with a URL pointing to a PNG.
+  const dinnerplateImg = document.createElement("img");
+
+  dinnerplateImg.src =
+    "dinner.jpg";
+  const dinnerplateMarkerView = new AdvancedMarkerElement({
+    map,
+    position: {lat: 45.971284876286475, lng: -81.51550012822338},
+    content: dinnerplateImg,
+    title: "A marker using a custom PNG Image",
+  });
+  // A marker with a custom SVG glyph.
+  const glyphImg = document.createElement("img");
+
+  glyphImg.src = "hotel.svg";
+
+  const glyphSvgPinElement = new PinElement({
+    glyph: glyphImg,
+  });
+  const glyphSvgMarkerView = new AdvancedMarkerElement({
+    map,
+    position: {lat: 45.970074027456945, lng: -81.50804157729885},
+    content: glyphSvgPinElement.element,
+    title: "A marker using a custom SVG for the glyph.",
   });
 }
 initMap();
