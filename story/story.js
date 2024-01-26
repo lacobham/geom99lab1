@@ -61,23 +61,5 @@ async function initMap() {
     content: pinElement.element,
     title: place.displayName,
   });
-// A marker using a Font Awesome icon for the glyph.
-  const icon = document.createElement("div");
-
-  icon.innerHTML = '<i class="fa fa-pizza-slice fa-lg"></i>';
-
-  const faPin = new PinElement({
-    glyph: icon,
-    glyphColor: "#ff8300",
-    background: "#FFD514",
-    borderColor: "#ff8300",
-  });
-  const faMarker = new AdvancedMarkerElement({
-    map,
-    position: position: {lat: 46.9687, lng: -81.4889},
-    content: faPin.element,
-    title: "A marker using a FontAwesome icon for the glyph.",
-  });
-}
 
 initMap();
