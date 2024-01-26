@@ -2,9 +2,9 @@ async function initMap() {
   // Request needed libraries.
   const { Map } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-  const center = { lat: 37.43238031167444, lng: -122.16795397128632 };
+  const center = { lat: 45.9701, lng: -81.5080 };
   const map = new Map(document.getElementById("map"), {
-    zoom: 11,
+    zoom: 14,
     center,
     mapId: "4504f8b37365c3d0",
   });
@@ -47,9 +47,9 @@ function buildContent(property) {
         <div class="address">${property.address}</div>
         <div class="features">
         <div>
-            <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
-            <span class="fa-sr-only">bedroom</span>
-            <span>${property.bed}</span>
+            <i aria-hidden="true" class="fa fa-tree fa-lg tree" title="HikingTrail"></i>
+            <span class="fa-sr-only">HikingTrail</span>
+            <span>${property.HikingTrail}</span>
         </div>
         <div>
             <i aria-hidden="true" class="fa fa-bath fa-lg bath" title="bathroom"></i>
@@ -73,12 +73,12 @@ const properties = [
     description: "Single family house with modern design",
     price: "$ 3,889,000",
     type: "home",
-    bed: 5,
+    HikingTrail: 5,
     bath: 4.5,
     size: 300,
     position: {
-      lat: 37.50024109655184,
-      lng: -122.28528451834352,
+      lat: 45.971284876286475,
+      lng: -81.51550012822338,
     },
   },
 ];
