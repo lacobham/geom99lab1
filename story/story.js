@@ -72,14 +72,12 @@ async function initMap() {
   });
   // A marker using a Font Awesome icon for the glyph.
   const icon = document.createElement("div");
-
-  icon.innerHTML = '<i class="fa fa-pizza-slice fa-lg"></i>';
-
+  icon.innerHTML = '<i class="fa fa-mountain fa-lg"</i>';
   const faPin = new PinElement({
     glyph: icon,
     glyphColor: "#c1d8f0",
     background: "#4663ac",
-    borderColor: "#4a5778",
+    borderColor: "##4a5778",
   });
   const faMarker = new AdvancedMarkerElement({
     map,
