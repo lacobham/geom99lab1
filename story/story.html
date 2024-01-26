@@ -50,7 +50,7 @@ div.desc {
 display: inline-block;
 }
       :root {
-  --building-color: #FF9800;
+  --tree-color: #FF9800;
   --house-color: #0288D1;
   --shop-color: #7B1FA2;
   --warehouse-color: #558B2F;
@@ -186,18 +186,18 @@ display: inline-block;
 }
 
 /*
- * Building icon colors.
+ * Tree icon colors.
  */
-.property.highlight:has(.fa-building) .icon {
-  color: var(--building-color);
+.property.highlight:has(.fa-tree) .icon {
+  color: var(--tree-color);
 }
 
-.property:not(.highlight):has(.fa-building) {
-  background-color: var(--building-color);
+.property:not(.highlight):has(.fa-tree) {
+  background-color: var(--tree-color);
 }
 
-.property:not(.highlight):has(.fa-building)::after {
-  border-top: 9px solid var(--building-color);
+.property:not(.highlight):has(.fa-tree)::after {
+  border-top: 9px solid var(--tree-color);
 }
 
 /*
