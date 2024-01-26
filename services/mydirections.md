@@ -28,7 +28,7 @@ Read the Rubric to find out about what options exist to earn more marks. Here is
   which the JSON will have a CID that can be directly used as a URL like https://maps.google.com/?cid=4569584641105657000
 
 ****
-Laura's URLs (Using PlaceIds of journey stops):
+Laura's URLs (Using PlaceIds of stops along the route):
 
 Port Credit
 https://www.google.com/maps/place/?q=place_id:ChIJuacP9XNGK4gRhI1MhToZA7I
@@ -45,7 +45,6 @@ https://www.google.com/maps/place/?q=place_id:ChIJpZLk7sYA1YkRY_irwr-RmVQ
 
 Lindsay
 https://www.google.com/maps/place/?q=place_id:ChIJmy7QzkN51YkRCN4Ff03qIbQ
-***
 ____
 ## Rubric
 
