@@ -44,51 +44,6 @@ async function initMap() {
     content: glyphSvgPinElement.element,
     title: "A marker using a custom SVG for the glyph.",
   });
-  // A marker customized using a place icon and color, name, and geometry.
-  const place = new Place({
-    id: "ChIJBWXVQVZzLk0RDaSVKMHkanE",
-  });
-
-  // Call fetchFields, passing the desired data fields.
-  await place.fetchFields({
-    fields: [
-      "location",
-      "displayName",
-      "svgIconMaskURI",
-      "iconBackgroundColor",
-    ],
-  });
-
-  const pinElement = new PinElement({
-    background: place.iconBackgroundColor,
-    glyph: new URL(String(place.svgIconMaskURI)),
-  });
-  const placeIconMarkerView = new AdvancedMarkerElement({
-    map,
-    position: place.location,
-    content: pinElement.element,
-    title: place.displayName,
-  });
-  // A marker using a Font Awesome icon for the glyph.
-  const icon = document.createElement("div");
-
-  icon.innerHTML = '<box-icon name='tree-alt'></box-icon>';
-
-  const faPin = new PinElement({
-    glyph: icon,
-    glyphColor: "#c1d8f0",
-    background: "#4663ac",
-    borderColor: "##4a5778",
-  });
-  const faMarker = new AdvancedMarkerElement({
-    map,
-    position: {
-      lat: 45.96857337410628,
-      lng: -81.48900853545217
-    },
-    content: faPin.element,
-    title: "A marker using a FontAwesome icon for the glyph.",
-  });
 }
 
 initMap();
