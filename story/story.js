@@ -71,9 +71,9 @@ async function initMap() {
     title: place.displayName,
   });
  // A marker using a Font Awesome icon for the glyph.
-  const icon = document.createElement("glyph");
+  const icon = document.createElement("div");
 
-  icon.innerHTML = '<i class="fa fa-pizza-slice fa-lg"></i>';
+  icon.innerHTML = '<i class="fa fa-pizza-slice"></i>';
 
   const faPin = new PinElement({
     glyph: icon,
