@@ -83,7 +83,11 @@ async function initMap() {
   });
   const faMarker = new AdvancedMarkerElement({
     map,
-    position: { lat: 37.412, lng: -122.095829650878 },
+    position: position: {
+      lat: 46.9687,
+      lng: -81.4889
+    },
+
     content: faPin.element,
     title: "A marker using a FontAwesome icon for the glyph.",
   });
