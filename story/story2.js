@@ -43,8 +43,8 @@ function buildContent(property) {
         <span class="fa-sr-only">${property.type}</span>
     </div>
     <div class="details">
-        <div class="visit">${property.visit}</div>
         <div class="address">${property.address}</div>
+        <div class="visit">${property.visit}</div>
         <div class="features">
         <div>
             <i aria-hidden="true" class="fa fa-bed fa-lg bed" title="bedroom"></i>
@@ -69,9 +69,9 @@ function buildContent(property) {
 
 const properties = [
   { 
-    address: "Killarney Mountain Lodge",
+    address: "Must-visit spot",
     description: "Hotel on Killarney Channel.",
-    visit: "Must-visit spot",
+    visit: "Killarney Mountain Lodge",
     type: "home",
     bed: 3,
     bath: 2,
@@ -82,9 +82,9 @@ const properties = [
     },
   },
   {
-    address: "Tar Vat Trail",
+    address: "Must-visit spot",
     description: "Hiking Trail starting at the Big Dipper",
-    visit: "Must-visit spot",
+    visit: "Tar Vat Trail",
     type: "tree",
     bed: 5,
     bath: 4.5,
@@ -95,9 +95,9 @@ const properties = [
     },
   },
     { 
-    address: "Killarney Lighthouse",
+    address: "Must-visit spot",
     description: "End of the Lighthouse Trail",
-    visit: "Must-visit spot",
+    visit: "Killarney Lighthouse",
     type: "mountain",
     bed: 3,
     bath: 2,
@@ -108,9 +108,9 @@ const properties = [
     },
   },
     { 
-    address: "Sportsman's Inn Restaurant",
+    address: "Can-skip spot",
     description: "End of the Lighthouse Trail",
-    visit: "Can-skip spot",
+    visit: "Sportsman's Inn Restaurant",
     type: "utensils",
     bed: 3,
     bath: 2,
