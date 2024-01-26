@@ -6,11 +6,8 @@ async function initMap() {
   );
   const { Place } = await google.maps.importLibrary("places");
   const map = new Map(document.getElementById("map"), {
-    center: {
-      lat: 45.9701,
-      lng: -81.5080
-    },
-    zoom: 15,
+    center: {lat: 45.9701, lng: -81.5080},
+    zoom: 14,
     mapId: "4504f8b37365c3d0",
   });
   const parser = new DOMParser();
@@ -21,10 +18,7 @@ async function initMap() {
     "dinner.jpg";
   const dinnerplateMarkerView = new AdvancedMarkerElement({
     map,
-    position: {
-      lat: 45.971284876286475,
-      lng: -81.51550012822338
-    },
+    position: {lat: 45.971284876286475, lng: -81.51550012822338},
     content: dinnerplateImg,
     title: "A marker using a custom PNG Image",
   });
@@ -38,10 +32,7 @@ async function initMap() {
   });
   const glyphSvgMarkerView = new AdvancedMarkerElement({
     map,
-    position: {
-      lat: 45.970074027456945,
-      lng: -81.50804157729885
-    },
+    position: {lat: 45.970074027456945, lng: -81.50804157729885},
     content: glyphSvgPinElement.element,
     title: "A marker using a custom SVG for the glyph.",
   });
@@ -83,11 +74,7 @@ async function initMap() {
   });
   const faMarker = new AdvancedMarkerElement({
     map,
-    position: position: {
-      lat: 46.9687,
-      lng: -81.4889
-    },
-
+    position: position: {lat: 46.9687, lng: -81.4889},
     content: faPin.element,
     title: "A marker using a FontAwesome icon for the glyph.",
   });
